@@ -1,0 +1,449 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://Scenes/Main/d1.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Main/d2_b.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Main/d2.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/Main/d5.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Main/d3.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Main/d4.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Main/d3_b.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Main/d4_b.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Main/d6.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/Main/d5_b.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/Main/d6_b.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/Main/d7.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/Main/back.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/Main/d10.png" type="Texture" id=14]
+[ext_resource path="res://Scenes/Main/d7_b.png" type="Texture" id=15]
+[ext_resource path="res://Scenes/Main/d8_b.png" type="Texture" id=16]
+[ext_resource path="res://Scenes/Main/d9.png" type="Texture" id=17]
+[ext_resource path="res://Scenes/Main/d9_b.png" type="Texture" id=18]
+[ext_resource path="res://Scenes/Main/d10_b.png" type="Texture" id=19]
+[ext_resource path="res://Scenes/Main/d8.png" type="Texture" id=20]
+[ext_resource path="res://Scenes/Main/Main.gd" type="Script" id=21]
+[ext_resource path="res://Scenes/Main/podl.png" type="Texture" id=22]
+[ext_resource path="res://Scenes/Main/06-charac te r-select.mp3" type="AudioStream" id=23]
+[ext_resource path="res://Scenes/Main/vyibor-nujnoy-klavishi-v-igre-pro-kosmos.mp3" type="AudioStream" id=24]
+
+[sub_resource type="Animation" id=8]
+resource_name = "Cetrion"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d8:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Ferra"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d10:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "Frost"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d7:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Jade"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Kitana"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d4:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Milina"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d2:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("d1:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("d2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("d3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("d4:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("d5:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("d6:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("d7:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("d8:self_modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("d9:self_modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("d10:self_modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Select:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Sindel"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d5:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Skarlet"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d9:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Sonya"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d1:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Tanya"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("d6:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 21 )
+
+[node name="bg" type="Sprite" parent="."]
+texture = ExtResource( 13 )
+offset = Vector2( 360, 640 )
+
+[node name="podl" type="Sprite" parent="."]
+position = Vector2( 156.498, 52.5004 )
+scale = Vector2( 0.995134, 1.00085 )
+texture = ExtResource( 22 )
+offset = Vector2( 205, 589 )
+
+[node name="d1" type="TextureButton" parent="."]
+margin_left = 151.0
+margin_top = 47.0
+margin_right = 354.0
+margin_bottom = 275.0
+texture_normal = ExtResource( 1 )
+
+[node name="d2" type="TextureButton" parent="."]
+margin_left = 367.0
+margin_top = 47.0
+margin_right = 570.0
+margin_bottom = 275.0
+texture_normal = ExtResource( 3 )
+texture_disabled = ExtResource( 2 )
+
+[node name="d3" type="TextureButton" parent="."]
+margin_left = 151.0
+margin_top = 286.0
+margin_right = 354.0
+margin_bottom = 514.0
+texture_normal = ExtResource( 5 )
+texture_disabled = ExtResource( 7 )
+
+[node name="d4" type="TextureButton" parent="."]
+margin_left = 367.0
+margin_top = 286.0
+margin_right = 570.0
+margin_bottom = 514.0
+texture_normal = ExtResource( 6 )
+texture_disabled = ExtResource( 8 )
+
+[node name="d5" type="TextureButton" parent="."]
+margin_left = 151.0
+margin_top = 527.0
+margin_right = 354.0
+margin_bottom = 755.0
+texture_normal = ExtResource( 4 )
+texture_disabled = ExtResource( 10 )
+
+[node name="d6" type="TextureButton" parent="."]
+margin_left = 367.0
+margin_top = 527.0
+margin_right = 570.0
+margin_bottom = 755.0
+texture_normal = ExtResource( 9 )
+texture_disabled = ExtResource( 11 )
+
+[node name="d7" type="TextureButton" parent="."]
+margin_left = 151.0
+margin_top = 768.0
+margin_right = 354.0
+margin_bottom = 996.0
+texture_normal = ExtResource( 12 )
+texture_disabled = ExtResource( 15 )
+
+[node name="d8" type="TextureButton" parent="."]
+margin_left = 367.0
+margin_top = 768.0
+margin_right = 570.0
+margin_bottom = 996.0
+texture_normal = ExtResource( 20 )
+texture_disabled = ExtResource( 16 )
+
+[node name="d9" type="TextureButton" parent="."]
+margin_left = 151.0
+margin_top = 1008.0
+margin_right = 354.0
+margin_bottom = 1236.0
+texture_normal = ExtResource( 17 )
+texture_disabled = ExtResource( 18 )
+
+[node name="d10" type="TextureButton" parent="."]
+margin_left = 367.0
+margin_top = 1008.0
+margin_right = 570.0
+margin_bottom = 1236.0
+texture_normal = ExtResource( 14 )
+texture_disabled = ExtResource( 19 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Cetrion = SubResource( 8 )
+anims/Ferra = SubResource( 9 )
+anims/Frost = SubResource( 10 )
+anims/Jade = SubResource( 3 )
+anims/Kitana = SubResource( 4 )
+anims/Milina = SubResource( 5 )
+anims/RESET = SubResource( 1 )
+anims/Sindel = SubResource( 6 )
+anims/Skarlet = SubResource( 11 )
+anims/Sonya = SubResource( 2 )
+anims/Tanya = SubResource( 7 )
+
+[node name="Back" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 360, 639 )
+stream = ExtResource( 23 )
+autoplay = true
+
+[node name="Select" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 360, 639 )
+stream = ExtResource( 24 )
+
+[connection signal="pressed" from="d1" to="." method="_on_d1_pressed"]
+[connection signal="pressed" from="d2" to="." method="_on_d2_pressed"]
+[connection signal="pressed" from="d3" to="." method="_on_d3_pressed"]
+[connection signal="pressed" from="d4" to="." method="_on_d4_pressed"]
+[connection signal="pressed" from="d5" to="." method="_on_d5_pressed"]
+[connection signal="pressed" from="d6" to="." method="_on_d6_pressed"]
+[connection signal="pressed" from="d7" to="." method="_on_d7_pressed"]
+[connection signal="pressed" from="d8" to="." method="_on_d8_pressed"]
+[connection signal="pressed" from="d9" to="." method="_on_d9_pressed"]
+[connection signal="pressed" from="d10" to="." method="_on_d10_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/vyibor-nujnoy-klavishi-v-igre-pro-kosmos.mp3-2689fcb70c924bbb7101e5b0c53c0a36.mp3str"
+
+[deps]
+
+source_file="res://Scenes/Main/vyibor-nujnoy-klavishi-v-igre-pro-kosmos.mp3"
+dest_files=[ "res://.import/vyibor-nujnoy-klavishi-v-igre-pro-kosmos.mp3-2689fcb70c924bbb7101e5b0c53c0a36.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
