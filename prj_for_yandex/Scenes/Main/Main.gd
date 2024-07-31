@@ -19,6 +19,7 @@ func _ready():
 	Global.connect("ad",self,'_ad')
 	Global.js_show_ad()
 	get_tree().paused=true
+	$Back.play()
 	
 func _foc_unfoc(value):
 	if value=="foc":
@@ -32,42 +33,52 @@ func _ad(value):
 func _on_d1_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Sonya")
+	$Back.stop()
 
 func _on_d2_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Milina")
+	$Back.stop()
 
 func _on_d3_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Jade")
+	$Back.stop()
 
 func _on_d4_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Kitana")
+	$Back.stop()
 
 func _on_d5_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Sindel")
+	$Back.stop()
 
 func _on_d6_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Tanya")
+	$Back.stop()
 
 func _on_d7_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Frost")
+	$Back.stop()
 
 func _on_d8_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Cetrion")
+	$Back.stop()
 
 func _on_d9_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Skarlet")
+	$Back.stop()
 
 func _on_d10_pressed():
 	$Select.play()
 	$AnimationPlayer.play("Ferra")
+	$Back.stop()
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	if anim_name=="Sonya":

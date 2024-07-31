@@ -1,0 +1,132 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1722247379
+default_env.tres::Environment::6516890237893779783::1722241360::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1722241338::0::1::::<><>::
+global.gd::GDScript::-1::1722237627::0::1::::<>Node<>::
+icon.png::CompressedTexture2D::7657179975393646459::1720676884::1722231716::1::::<><>::
+::res://Assets/::1722234245
+Cetrion.png::CompressedTexture2D::7542482392798682420::1721717132::1722233273::1::::<><>::
+Cetrion_t.png::CompressedTexture2D::6650638180186386533::1721717132::1722233383::1::::<><>::
+Ferra.png::CompressedTexture2D::7513616383676327726::1721721852::1722233587::1::::<><>::
+Ferra_t.png::CompressedTexture2D::1524061221099622855::1721721852::1722233632::1::::<><>::
+Frost.png::CompressedTexture2D::879291288873235865::1721651170::1722231736::1::::<><>::
+Frost_t.png::CompressedTexture2D::8559665768814762373::1721651170::1722233523::1::::<><>::
+Jade.png::CompressedTexture2D::4332000259137466641::1721646629::1722231725::1::::<><>::
+Jade_t.png::CompressedTexture2D::6549187291907876095::1721646629::1722233576::1::::<><>::
+Kitana.png::CompressedTexture2D::8771429669255304152::1721652476::1722233644::1::::<><>::
+Kitana_t.png::CompressedTexture2D::2658155886075733032::1721652975::1722234015::1::::<><>::
+Milina.png::CompressedTexture2D::3667795549866947392::1721712696::1722234038::1::::<><>::
+Milina_t.png::CompressedTexture2D::2156213713436367751::1721712932::1722234075::1::::<><>::
+Sindel.png::CompressedTexture2D::3574682940202358720::1721714561::1722234088::1::::<><>::
+Sindel_t.png::CompressedTexture2D::4648165946604283448::1721714561::1722234124::1::::<><>::
+Skarlet.png::CompressedTexture2D::7123067697356749608::1721719850::1722234131::1::::<><>::
+Skarlet_t.png::CompressedTexture2D::7679497693561431304::1721720525::1722234166::1::::<><>::
+Sonya.png::CompressedTexture2D::4280550753413019152::1721640413::1722234173::1::::<><>::
+Sonya_t.png::CompressedTexture2D::5031996647044869914::1721641273::1722234209::1::::<><>::
+Tanya.png::CompressedTexture2D::1112440052284698555::1721716222::1722234217::1::::<><>::
+Tanya_t.png::CompressedTexture2D::5325280134462552557::1721716549::1722234245::1::::<><>::
+::res://Scenes/::1722069265
+::res://Scenes/Audio/::1722231716
+0 1.mp3::AudioStreamMP3::3130520223523304539::1721989401::1722231716::1::::<><>::
+0 2.mp3::AudioStreamMP3::8121259356260794022::1721989401::1722231716::1::::<><>::
+0 3.mp3::AudioStreamMP3::3891964805037859175::1721989401::1722231716::1::::<><>::
+0 4.mp3::AudioStreamMP3::1298512338648550287::1721989401::1722231716::1::::<><>::
+0 5.mp3::AudioStreamMP3::3789337238292042593::1721989401::1722231716::1::::<><>::
+Audio.tscn::PackedScene::-1::1722231699::0::1::::<><>::res://Scenes/Audio/0 2.mp3<>res://Scenes/Audio/0 1.mp3<>res://Scenes/Audio/0 4.mp3<>res://Scenes/Audio/0 5.mp3<>res://Scenes/Audio/0 3.mp3
+::res://Scenes/Cetrion/::1722241360
+Cetrion.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Cetrion.tscn::PackedScene::6405885984521264435::1722241046::0::1::::<><>::uid://dfpvt280515bk::::res://Assets/Cetrion.png<>uid://dhdgvuuncxgkx::::res://icon.png<>uid://bri4mbachu37e::::res://Scenes/Cetrion/jiggle_default.material<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Cetrion/Cetrion.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+jiggle_default.material::ShaderMaterial::3597928322513610884::1722241360::0::1::::<><>::res://Scenes/Cetrion/jiggle_physics.gdshader<>uid://c10vbljbjhp86::::res://Assets/Cetrion_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+::res://Scenes/Ferra/::1722241360
+Ferra.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Ferra.tscn::PackedScene::341898189498149217::1722241046::0::1::::<><>::uid://dfbwftxidttvq::::res://Assets/Ferra.png<>uid://dhdgvuuncxgkx::::res://icon.png<>uid://m16fxjkt45sr::::res://Scenes/Ferra/jiggle_default.material<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Ferra/Ferra.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+jiggle_default.material::ShaderMaterial::897832323428440453::1722241360::0::1::::<><>::res://Scenes/Ferra/jiggle_physics.gdshader<>uid://vyjch5bu13ix::::res://Assets/Ferra_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+::res://Scenes/Frost/::1722241360
+Frost.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Frost.tscn::PackedScene::9200695226491397068::1722241046::0::1::::<><>::uid://dhdgvuuncxgkx::::res://icon.png<>uid://mr62fyk5dq6d::::res://Assets/Frost.png<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Frost/Frost.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://4ksd4g11ustk::::res://Scenes/Frost/jiggle_default.material<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+jiggle_default.material::ShaderMaterial::2057220039957901912::1722241360::0::1::::<><>::res://Scenes/Frost/jiggle_physics.gdshader<>uid://dt7mpd8yqsvr6::::res://Assets/Frost_t.png
+jiggle_physics.gdshader::Shader::-1::1722233398::0::1::::<><>::
+::res://Scenes/Jade/::1722241360
+Jade.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Jade.tscn::PackedScene::3298597680548794193::1722241360::0::1::::<><>::uid://db6xb5yb1qv5p::::res://Scenes/Jade/jiggle_default.material<>uid://dhdgvuuncxgkx::::res://icon.png<>uid://b2ypn8r5jmeej::::res://Assets/Jade.png<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Jade/Jade.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+jiggle_default.material::ShaderMaterial::7294846494577366815::1722241360::0::1::::<><>::res://Scenes/Jade/jiggle_physics.gdshader<>uid://c0kqfmqd7it16::::res://Assets/Jade_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+::res://Scenes/Kitana/::1722241360
+jiggle_default.material::ShaderMaterial::741699405303092352::1722241360::0::1::::<><>::res://Scenes/Kitana/jiggle_physics.gdshader<>uid://bd4vo6txnnaro::::res://Assets/Kitana_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+Kitana.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Kitana.tscn::PackedScene::3052999263166887131::1722241046::0::1::::<><>::uid://dw77fu5kempnc::::res://Assets/Kitana.png<>uid://dhdgvuuncxgkx::::res://icon.png<>uid://ktjxfb2jo3we::::res://Scenes/Kitana/jiggle_default.material<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Kitana/Kitana.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+::res://Scenes/Main/::1722241046
+06-charac te r-select.mp3::AudioStreamMP3::2077007076775952670::1721898973::1722231716::1::::<><>::
+back.png::CompressedTexture2D::6872374258086402871::1721887460::1722231716::1::::<><>::
+d1.png::CompressedTexture2D::5619527013271707710::1721887460::1722231716::1::::<><>::
+d2.png::CompressedTexture2D::4238092017624600888::1721887460::1722231716::1::::<><>::
+d2_b.png::CompressedTexture2D::4475715142076836575::1721887460::1722231716::1::::<><>::
+d3.png::CompressedTexture2D::2495479124581634664::1721887460::1722231716::1::::<><>::
+d3_b.png::CompressedTexture2D::7178324228369811575::1721887460::1722231716::1::::<><>::
+d4.png::CompressedTexture2D::6729621812206133017::1721887460::1722231716::1::::<><>::
+d4_b.png::CompressedTexture2D::8852687227661159510::1721887460::1722231716::1::::<><>::
+d5.png::CompressedTexture2D::6912732149948363045::1721887460::1722231716::1::::<><>::
+d5_b.png::CompressedTexture2D::6425567275584280629::1721887460::1722231716::1::::<><>::
+d6.png::CompressedTexture2D::3097118829877059379::1721887460::1722231716::1::::<><>::
+d6_b.png::CompressedTexture2D::4019004824464075351::1721887460::1722231716::1::::<><>::
+d7.png::CompressedTexture2D::3776197613493077672::1721887460::1722231716::1::::<><>::
+d7_b.png::CompressedTexture2D::8608749016646910215::1721887460::1722231716::1::::<><>::
+d8.png::CompressedTexture2D::1295750607145392579::1721887460::1722231716::1::::<><>::
+d8_b.png::CompressedTexture2D::5894987647354564359::1721887460::1722231716::1::::<><>::
+d9.png::CompressedTexture2D::1522945637925341424::1721887460::1722231716::1::::<><>::
+d9_b.png::CompressedTexture2D::1439127127062190475::1721887460::1722231716::1::::<><>::
+d10.png::CompressedTexture2D::4451082772538694288::1721887460::1722231716::1::::<><>::
+d10_b.png::CompressedTexture2D::6150877145389108629::1721887460::1722231716::1::::<><>::
+Main.gd::GDScript::-1::1722231699::0::1::::<>Control<>::
+Main.tscn::PackedScene::5736533277930927352::1722241046::0::1::::<><>::uid://cmce127l8ifdu::::res://Scenes/Main/d1.png<>uid://b41cmy5s5j3w2::::res://Scenes/Main/d2_b.png<>uid://b1m70ylc0gu6k::::res://Scenes/Main/d2.png<>uid://c5qtxn7v60j6l::::res://Scenes/Main/d5.png<>uid://bbs3gaeuvn5bw::::res://Scenes/Main/d3.png<>uid://c2445gtn14qk4::::res://Scenes/Main/d4.png<>uid://dajh7lw577olj::::res://Scenes/Main/d3_b.png<>uid://dyekp23axwu0u::::res://Scenes/Main/d4_b.png<>uid://bkejdhnp7o0yp::::res://Scenes/Main/d6.png<>uid://cxsufikk2dexp::::res://Scenes/Main/d5_b.png<>uid://bxi3omfdikg3x::::res://Scenes/Main/d6_b.png<>uid://bt2hom785h6oy::::res://Scenes/Main/d7.png<>uid://c46a887uhe1yp::::res://Scenes/Main/back.png<>uid://b4oexhq038o05::::res://Scenes/Main/d10.png<>uid://duwe3rmm283kl::::res://Scenes/Main/d7_b.png<>uid://cp8tt5t8l735l::::res://Scenes/Main/d8_b.png<>uid://vxyxsek7lh65::::res://Scenes/Main/d9.png<>uid://urehi3lj0cch::::res://Scenes/Main/d9_b.png<>uid://ctvsbvn32gnnh::::res://Scenes/Main/d10_b.png<>uid://spw28ut7x56v::::res://Scenes/Main/d8.png<>res://Scenes/Main/Main.gd<>uid://c1eoool55stlq::::res://Scenes/Main/podl.png<>uid://4ueadt3umx4i::::res://Scenes/Main/06-charac te r-select.mp3<>uid://4ot16okvly2g::::res://Scenes/Main/vyibor-nujnoy-klavishi-v-igre-pro-kosmos.mp3
+podl.png::CompressedTexture2D::6606884605728315458::1721892387::1722231716::1::::<><>::
+vyibor-nujnoy-klavishi-v-igre-pro-kosmos.mp3::AudioStreamMP3::2065579457897860708::1721899080::1722231716::1::::<><>::
+::res://Scenes/Milina/::1722241360
+jiggle_default.material::ShaderMaterial::2271212084620195882::1722241360::0::1::::<><>::res://Scenes/Milina/jiggle_physics.gdshader<>uid://5yqr3yb7af32::::res://Assets/Milina_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+Milina.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Milina.tscn::PackedScene::5803289888370780533::1722241046::0::1::::<><>::uid://7mgsccq8eubi::::res://Scenes/Milina/jiggle_default.material<>uid://dhdgvuuncxgkx::::res://icon.png<>uid://bsiyb6x3ho3i7::::res://Assets/Milina.png<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Milina/Milina.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+::res://Scenes/reklama/::1722231716
+rekl.png::CompressedTexture2D::8879724536802934529::1721993198::1722231716::1::::<><>::
+rekl.tscn::PackedScene::-1::1722231699::0::1::::<><>::res://Scenes/reklama/rekl.png<>res://Scenes/ui/arial_bolditalicmt.ttf
+::res://Scenes/Sindel/::1722241360
+jiggle_default.material::ShaderMaterial::8280333427201609540::1722241360::0::1::::<><>::res://Scenes/Sindel/jiggle_physics.gdshader<>uid://b7huu43bd48ho::::res://Assets/Sindel_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+Sindel.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Sindel.tscn::PackedScene::3450218485458811132::1722241046::0::1::::<><>::uid://dp8b48lisw4q7::::res://Scenes/Sindel/jiggle_default.material<>uid://dhdgvuuncxgkx::::res://icon.png<>uid://bq6urgwj31pn1::::res://Assets/Sindel.png<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Sindel/Sindel.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+::res://Scenes/Skarlet/::1722241360
+jiggle_default.material::ShaderMaterial::3959193201490798637::1722241360::0::1::::<><>::res://Scenes/Skarlet/jiggle_physics.gdshader<>uid://dhoag8ajmdgwm::::res://Assets/Skarlet_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+Skarlet.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Skarlet.tscn::PackedScene::9171219791504627584::1722241046::0::1::::<><>::uid://c8qp5ch3haa8w::::res://Assets/Skarlet.png<>uid://dhdgvuuncxgkx::::res://icon.png<>uid://bwn4llvfhtdur::::res://Scenes/Skarlet/jiggle_default.material<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Skarlet/Skarlet.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+::res://Scenes/Sonya/::1722241360
+jiggle_default.material::ShaderMaterial::3683369031906098003::1722241360::0::1::::<><>::res://Scenes/Sonya/jiggle_physics.gdshader<>uid://cdxsiqsaab85s::::res://Assets/Sonya_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+Sonya.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Sonya.tscn::PackedScene::5303874334710659335::1722241046::0::1::::<><>::uid://dhdgvuuncxgkx::::res://icon.png<>uid://bsqisxtw7jedv::::res://Scenes/Sonya/jiggle_default.material<>uid://b18sbsu25egts::::res://Assets/Sonya.png<>res://Scenes/Sonya/Sonya.gd<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+::res://Scenes/SpringSimulation/::1722238987
+BasePosition.gd::GDScript::-1::1722231699::0::1::::<>Sprite2D<>::
+SpringPoint.gd::GDScript::-1::1722238503::0::1::::<>Node2D<>::
+SpringSim.gd::GDScript::-1::1722238987::0::1::::<>Node2D<>::
+SpringSim.tscn::PackedScene::-1::1722231699::0::1::::<><>::res://icon.png<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/SpringSimulation/SpringSim.gd
+::res://Scenes/Start/::1722241045
+mk_icon.png::CompressedTexture2D::8037793151514321053::1722069785::1722231717::1::::<><>::
+Start.gd::GDScript::-1::1722231699::0::1::::<>Node2D<>::
+Start.tscn::PackedScene::1433709593102178762::1722241045::0::1::::<><>::uid://dmrtjqmw5y8bx::::res://Scenes/Start/mk_icon.png<>res://Scenes/Start/Start.gd<>uid://c46a887uhe1yp::::res://Scenes/Main/back.png
+::res://Scenes/Tanya/::1722241360
+jiggle_default.material::ShaderMaterial::7251667566921969797::1722241360::0::1::::<><>::res://Scenes/Tanya/jiggle_physics.gdshader<>uid://ch4ut6fs22j7b::::res://Assets/Tanya_t.png
+jiggle_physics.gdshader::Shader::-1::1722231699::0::1::::<><>::
+Tanya.gd::GDScript::-1::1722231699::0::1::::<>Node3D<>::
+Tanya.tscn::PackedScene::770393433462934766::1722241046::0::1::::<><>::uid://dbk051txsg558::::res://Scenes/Tanya/jiggle_default.material<>uid://dhdgvuuncxgkx::::res://icon.png<>uid://p34ywitp37al::::res://Assets/Tanya.png<>res://Scenes/SpringSimulation/BasePosition.gd<>res://Scenes/Tanya/Tanya.gd<>res://Scenes/SpringSimulation/SpringPoint.gd<>res://Scenes/SpringSimulation/SpringSim.gd<>uid://deaqsefjnswf7::::res://Scenes/ui/label.png<>uid://c1g6j1kkxie1n::::res://Scenes/ui/button_back.png<>uid://g3ym37hmvut4::::res://Scenes/ui/button.png<>uid://dk5odmd0fs04c::::res://Scenes/ui/under.png<>uid://dkvxqikwkke87::::res://Scenes/ui/over.png<>uid://dkm8ddswtqa4p::::res://Scenes/ui/button_b.png<>uid://srakqvnas856::::res://Scenes/Audio/0 4.mp3<>uid://bt8t3ijjbeanx::::res://Scenes/Audio/0 5.mp3<>uid://dnx87qb7d244q::::res://Scenes/Audio/0 2.mp3<>uid://bvpkdea2ehvjj::::res://Scenes/Audio/0 3.mp3<>uid://bkuphftu7i3g6::::res://Scenes/Audio/0 1.mp3<>uid://dyrn1bidtv83n::::res://Scenes/reklama/rekl.png
+::res://Scenes/ui/::1722231716
+arial_bolditalicmt.ttf::FontFile::8515789510990978915::1721908033::1722231716::1::::<><>::
+button.png::CompressedTexture2D::480415796717600443::1721907381::1722231716::1::::<><>::
+button_b.png::CompressedTexture2D::7887932225053481817::1721907381::1722231716::1::::<><>::
+button_back.png::CompressedTexture2D::6612037248960865025::1721907381::1722231716::1::::<><>::
+label.png::CompressedTexture2D::7441021260050431202::1721907381::1722231716::1::::<><>::
+over.png::CompressedTexture2D::7905927920479176130::1721901991::1722231716::1::::<><>::
+Ui.tscn::PackedScene::-1::1722231699::0::1::::<><>::res://Scenes/ui/under.png<>res://Scenes/ui/over.png<>res://Scenes/ui/arial_bolditalicmt.ttf<>res://Scenes/ui/button_b.png<>res://Scenes/ui/button_back.png<>res://Scenes/ui/button.png<>res://Scenes/ui/label.png
+under.png::CompressedTexture2D::7923937851419785088::1721901931::1722231716::1::::<><>::

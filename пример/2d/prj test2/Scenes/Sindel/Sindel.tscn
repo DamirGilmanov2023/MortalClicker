@@ -1,0 +1,210 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Scenes/Sindel/jiggle_default.material" type="Material" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sindel.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/SpringSimulation/BasePosition.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/Sindel/Sindel.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/SpringSimulation/SpringPoint.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/SpringSimulation/SpringSim.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/ui/label.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/ui/button_back.png" type="Texture" id=9]
+[ext_resource path="res://Scenes/ui/button.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/ui/under.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/ui/over.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/ui/button_b.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/ui/arial_bolditalicmt.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://Scenes/Audio/0 4.mp3" type="AudioStream" id=15]
+[ext_resource path="res://Scenes/Audio/0 5.mp3" type="AudioStream" id=16]
+[ext_resource path="res://Scenes/Audio/0 2.mp3" type="AudioStream" id=17]
+[ext_resource path="res://Scenes/Audio/0 3.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Scenes/Audio/0 1.mp3" type="AudioStream" id=19]
+[ext_resource path="res://Scenes/reklama/rekl.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Sindel_t.png" type="Texture" id=21]
+
+[sub_resource type="DynamicFont" id=4]
+size = 25
+font_data = ExtResource( 14 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 30
+font_data = ExtResource( 14 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+font_data = ExtResource( 14 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 50
+font_data = ExtResource( 14 )
+
+[node name="Jiggle" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 360, 640 )
+
+[node name="Sprite" type="Sprite" parent="Node2D"]
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="Node2D"]
+material = ExtResource( 1 )
+position = Vector2( 33, 113 )
+scale = Vector2( 1.07418, 1.07418 )
+texture = ExtResource( 21 )
+
+[node name="SpringSim" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 7 )
+damping = 0.05
+MAX_DISTANCE = 20.0
+
+[node name="BasePosition" type="Sprite" parent="SpringSim"]
+position = Vector2( 512, 300 )
+texture = ExtResource( 2 )
+script = ExtResource( 4 )
+
+[node name="SpringPoint" type="Sprite" parent="SpringSim"]
+position = Vector2( 240, 192 )
+texture = ExtResource( 2 )
+script = ExtResource( 6 )
+base_position = NodePath("../BasePosition")
+
+[node name="ui" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="button_back" type="TextureButton" parent="ui"]
+margin_left = 17.0
+margin_top = 16.0
+margin_right = 127.0
+margin_bottom = 126.0
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="progress" type="TextureProgress" parent="ui"]
+margin_left = 77.0
+margin_top = 1166.0
+margin_right = 633.0
+margin_bottom = 1233.0
+value = 100.0
+texture_under = ExtResource( 11 )
+texture_progress = ExtResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="button_add" type="TextureButton" parent="ui"]
+margin_left = 472.0
+margin_top = 1037.0
+margin_right = 691.0
+margin_bottom = 1144.0
+disabled = true
+texture_normal = ExtResource( 10 )
+texture_disabled = ExtResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="label_add" type="Label" parent="ui"]
+margin_left = 477.0
+margin_top = 1042.0
+margin_right = 686.0
+margin_bottom = 1139.0
+custom_fonts/font = SubResource( 4 )
+text = "200
+клик +2"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Sprite" parent="ui"]
+position = Vector2( 23, 1067 )
+texture = ExtResource( 8 )
+offset = Vector2( 78, 39 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="score" type="Label" parent="ui"]
+margin_left = 28.0
+margin_top = 1072.0
+margin_right = 174.0
+margin_bottom = 1140.0
+custom_fonts/font = SubResource( 5 )
+text = "10"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="life" type="Label" parent="ui"]
+margin_left = 82.0
+margin_top = 1171.0
+margin_right = 628.0
+margin_bottom = 1228.0
+custom_fonts/font = SubResource( 6 )
+text = "999"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Audio" type="Node2D" parent="."]
+position = Vector2( 362, 609 )
+
+[node name="Play1" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2( -3, -4 )
+stream = ExtResource( 19 )
+
+[node name="Play2" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2( -3, -4 )
+stream = ExtResource( 17 )
+
+[node name="Play3" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2( -3, -4 )
+stream = ExtResource( 18 )
+
+[node name="Play4" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2( -3, -4 )
+stream = ExtResource( 15 )
+
+[node name="Play5" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2( -3, -4 )
+stream = ExtResource( 16 )
+autoplay = true
+
+[node name="rekl" type="Node2D" parent="."]
+visible = false
+position = Vector2( 40, 0 )
+
+[node name="Sprite" type="Sprite" parent="rekl"]
+position = Vector2( 320, 640 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 20 )
+
+[node name="Label" type="Label" parent="rekl"]
+margin_left = 126.0
+margin_top = 590.0
+margin_right = 534.0
+margin_bottom = 647.0
+custom_fonts/font = SubResource( 7 )
+text = "Реклама через 3"
+
+[node name="Timer" type="Timer" parent="rekl"]
+one_shot = true
+
+[node name="T" type="Timer" parent="rekl"]
+wait_time = 180.0
+one_shot = true
+
+[connection signal="pressed" from="ui/button_back" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="ui/button_add" to="." method="_on_button_add_pressed"]
+[connection signal="timeout" from="rekl/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="rekl/T" to="." method="_on_T_timeout"]

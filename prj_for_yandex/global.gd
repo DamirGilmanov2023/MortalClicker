@@ -62,9 +62,11 @@ func safe_data():
 	
 	value+=str(score)+";"
 	
-	for x in mass_add:
-		value+=str(x)+","
-	value.substr(0,value.length()-1)
+	var i=0
+	while i<len(mass_add):
+		value+=str(mass_add[i])+","
+		i+=1
+	value=value.substr(0,value.length()-1)
 	
 	js_set_data(value)
 #-------------------------------------------------------------------------------
@@ -124,13 +126,26 @@ func _get_data(args):
 		Skarlet_max_life=int(maxx[8])
 		Ferra_max_life=int(maxx[9])
 		
+		Milina_disabled=true if int(disabled[0])==1 else false 
+		Jade_disabled=true if int(disabled[1])==1 else false 
+		Kitana_disabled=true if int(disabled[2])==1 else false
+		Sindel_disabled=true if int(disabled[3])==1 else false
+		Tanya_disabled=true if int(disabled[4])==1 else false
+		Frost_disabled=true if int(disabled[5])==1 else false
+		Cetrion_disabled=true if int(disabled[6])==1 else false
+		Skarlet_disabled=true if int(disabled[7])==1 else false
+		Ferra_disabled=true if int(disabled[8])==1 else false
+		
 		step=int(sstep)
 		
 		score=int(sscore)
 		
 		mass_add.clear()
-		for x in smass_add:
-			mass_add.append(int(x))
+		var i=0
+		while i<len(smass_add):
+			if int(smass_add[i])!=0:
+				mass_add.append(int(smass_add[i]))
+			i+=1
 #-------------------------------------------------------------------------------
 func js_set_data(value):
 	win.set_data(value)

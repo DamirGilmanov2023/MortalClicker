@@ -2,22 +2,20 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Sindel_t.png-8d0610e69e2600569e721a7104d583fc.s3tc.stex"
-path.etc2="res://.import/Sindel_t.png-8d0610e69e2600569e721a7104d583fc.etc2.stex"
+path="res://.import/Sindel_t.png-8d0610e69e2600569e721a7104d583fc.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Assets/Sindel_t.png"
-dest_files=[ "res://.import/Sindel_t.png-8d0610e69e2600569e721a7104d583fc.s3tc.stex", "res://.import/Sindel_t.png-8d0610e69e2600569e721a7104d583fc.etc2.stex" ]
+dest_files=[ "res://.import/Sindel_t.png-8d0610e69e2600569e721a7104d583fc.stex" ]
 
 [params]
 
-compress/mode=2
-compress/lossy_quality=0.6
+compress/mode=1
+compress/lossy_quality=0.4
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0

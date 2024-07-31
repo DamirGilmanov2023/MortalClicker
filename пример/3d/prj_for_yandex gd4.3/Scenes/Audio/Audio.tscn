@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Audio/0 2.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Scenes/Audio/0 1.mp3" type="AudioStream" id=2]
+[ext_resource path="res://Scenes/Audio/0 4.mp3" type="AudioStream" id=3]
+[ext_resource path="res://Scenes/Audio/0 5.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Scenes/Audio/0 3.mp3" type="AudioStream" id=5]
+
+[node name="Audio" type="Node2D"]
+position = Vector2( -477, 645 )
+
+[node name="Play1" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -3, -4 )
+stream = ExtResource( 2 )
+
+[node name="Play2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -3, -4 )
+stream = ExtResource( 1 )
+
+[node name="Play3" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -3, -4 )
+stream = ExtResource( 5 )
+
+[node name="Play4" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -3, -4 )
+stream = ExtResource( 3 )
+
+[node name="Play5" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -3, -4 )
+stream = ExtResource( 4 )

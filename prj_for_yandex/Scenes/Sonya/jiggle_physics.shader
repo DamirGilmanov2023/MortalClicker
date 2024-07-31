@@ -18,7 +18,7 @@ void vertex()
 	d = distance(uv_center - vec2(breast_offset.x, -breast_offset.y), UV);
 	influence += 1.0 - smoothstep(influence_start, influence_start + influence_blend, d);
 	
-	VERTEX.xz += (influence * spring_offset * pull_strength) / vec2(textureSize(breasts_tex, 0));
+	VERTEX.xz += (influence * spring_offset * pull_strength) / vec2(345,303);
 }
 
 void fragment()

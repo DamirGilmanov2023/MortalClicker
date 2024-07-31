@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/06-charac te r-select.mp3-69883e53238f920d668c5349c4556864.mp3str"
+
+[deps]
+
+source_file="res://Scenes/Main/06-charac te r-select.mp3"
+dest_files=[ "res://.import/06-charac te r-select.mp3-69883e53238f920d668c5349c4556864.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

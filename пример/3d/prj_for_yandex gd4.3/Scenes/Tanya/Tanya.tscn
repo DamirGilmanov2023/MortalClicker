@@ -1,0 +1,205 @@
+[gd_scene load_steps=23 format=3 uid="uid://k8gjc8xt6wnu"]
+
+[ext_resource type="Material" uid="uid://dbk051txsg558" path="res://Scenes/Tanya/jiggle_default.material" id="1"]
+[ext_resource type="Texture2D" uid="uid://dhdgvuuncxgkx" path="res://icon.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://p34ywitp37al" path="res://Assets/Tanya.png" id="3"]
+[ext_resource type="Script" path="res://Scenes/SpringSimulation/BasePosition.gd" id="4"]
+[ext_resource type="Script" path="res://Scenes/Tanya/Tanya.gd" id="5"]
+[ext_resource type="Script" path="res://Scenes/SpringSimulation/SpringPoint.gd" id="6"]
+[ext_resource type="Script" path="res://Scenes/SpringSimulation/SpringSim.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://deaqsefjnswf7" path="res://Scenes/ui/label.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c1g6j1kkxie1n" path="res://Scenes/ui/button_back.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://g3ym37hmvut4" path="res://Scenes/ui/button.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dk5odmd0fs04c" path="res://Scenes/ui/under.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dkvxqikwkke87" path="res://Scenes/ui/over.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dkm8ddswtqa4p" path="res://Scenes/ui/button_b.png" id="13"]
+[ext_resource type="AudioStream" uid="uid://srakqvnas856" path="res://Scenes/Audio/0 4.mp3" id="15"]
+[ext_resource type="AudioStream" uid="uid://bt8t3ijjbeanx" path="res://Scenes/Audio/0 5.mp3" id="16"]
+[ext_resource type="AudioStream" uid="uid://dnx87qb7d244q" path="res://Scenes/Audio/0 2.mp3" id="17"]
+[ext_resource type="AudioStream" uid="uid://bvpkdea2ehvjj" path="res://Scenes/Audio/0 3.mp3" id="18"]
+[ext_resource type="AudioStream" uid="uid://bkuphftu7i3g6" path="res://Scenes/Audio/0 1.mp3" id="19"]
+[ext_resource type="Texture2D" uid="uid://dyrn1bidtv83n" path="res://Scenes/reklama/rekl.png" id="20"]
+
+[sub_resource type="StandardMaterial3D" id="2"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("3")
+
+[sub_resource type="PlaneMesh" id="3"]
+
+[sub_resource type="PlaneMesh" id="1"]
+subdivide_width = 64
+subdivide_depth = 64
+
+[node name="Jiggle" type="Node3D"]
+script = ExtResource("5")
+
+[node name="SpringSim" type="Node2D" parent="."]
+visible = false
+script = ExtResource("7")
+damping = 0.1
+MAX_DISTANCE = 60.0
+
+[node name="Camera2D" type="Camera2D" parent="SpringSim"]
+position = Vector2(464, 242)
+zoom = Vector2(2, 2)
+
+[node name="BasePosition" type="Sprite2D" parent="SpringSim"]
+position = Vector2(512, 300)
+texture = ExtResource("2")
+script = ExtResource("4")
+
+[node name="SpringPoint" type="Sprite2D" parent="SpringSim"]
+position = Vector2(240, 192)
+texture = ExtResource("2")
+script = ExtResource("6")
+base_position = NodePath("../BasePosition")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.80527, 0)
+projection = 1
+current = true
+size = 2.365
+
+[node name="Body" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.486)
+
+[node name="Chest" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(0.683706, 0, 0, 0, 1, 0, 0, 0, 1.18424, -0.0112822, -0.453668, 0.484528)
+material_override = SubResource("2")
+mesh = SubResource("3")
+
+[node name="Breasts" type="MeshInstance3D" parent="Body"]
+transform = Transform3D(0.465362, 0, 0, 0, 1.10703, 0, 0, 0, 0.33666, -0.00976495, -0.408942, 0.563799)
+material_override = ExtResource("1")
+mesh = SubResource("1")
+skeleton = NodePath("../..")
+
+[node name="ui" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -235.0
+offset_top = -1023.0
+offset_right = -235.0
+offset_bottom = -1023.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+
+[node name="button_back" type="TextureButton" parent="ui"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 16.0
+offset_right = 127.0
+offset_bottom = 126.0
+texture_normal = ExtResource("9")
+
+[node name="progress" type="TextureProgressBar" parent="ui"]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 1166.0
+offset_right = 633.0
+offset_bottom = 1233.0
+value = 100.0
+texture_under = ExtResource("11")
+texture_progress = ExtResource("12")
+
+[node name="button_add" type="TextureButton" parent="ui"]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 1037.0
+offset_right = 691.0
+offset_bottom = 1144.0
+disabled = true
+texture_normal = ExtResource("10")
+texture_disabled = ExtResource("13")
+
+[node name="label_add" type="Label" parent="ui"]
+layout_mode = 0
+offset_left = 477.0
+offset_top = 1042.0
+offset_right = 686.0
+offset_bottom = 1139.0
+text = "200
+клик +2"
+
+[node name="Label" type="Sprite2D" parent="ui"]
+position = Vector2(23, 1067)
+texture = ExtResource("8")
+offset = Vector2(78, 39)
+
+[node name="score" type="Label" parent="ui"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 1072.0
+offset_right = 174.0
+offset_bottom = 1140.0
+text = "10"
+
+[node name="life" type="Label" parent="ui"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 1171.0
+offset_right = 628.0
+offset_bottom = 1228.0
+text = "999"
+
+[node name="Audio" type="Node2D" parent="."]
+position = Vector2(459, 860)
+
+[node name="Play1" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2(-3, -4)
+stream = ExtResource("19")
+autoplay = true
+
+[node name="Play2" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2(-3, -4)
+stream = ExtResource("17")
+
+[node name="Play3" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2(-3, -4)
+stream = ExtResource("18")
+
+[node name="Play4" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2(-3, -4)
+stream = ExtResource("15")
+
+[node name="Play5" type="AudioStreamPlayer2D" parent="Audio"]
+position = Vector2(-3, -4)
+stream = ExtResource("16")
+
+[node name="rekl" type="Node2D" parent="."]
+visible = false
+position = Vector2(-254, -1035)
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="rekl"]
+position = Vector2(352, 640)
+scale = Vector2(1.08889, 1)
+texture = ExtResource("20")
+
+[node name="Label" type="Label" parent="rekl"]
+offset_left = 163.0
+offset_top = 590.0
+offset_right = 571.0
+offset_bottom = 647.0
+text = "Реклама через 3"
+
+[node name="Timer" type="Timer" parent="rekl"]
+one_shot = true
+
+[node name="T" type="Timer" parent="rekl"]
+wait_time = 180.0
+one_shot = true
+
+[node name="TimerSafe" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="pressed" from="ui/button_back" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="ui/button_add" to="." method="_on_button_add_pressed"]
+[connection signal="timeout" from="rekl/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="rekl/T" to="." method="_on_T_timeout"]
+[connection signal="timeout" from="TimerSafe" to="." method="_on_TimerSafe_timeout"]

@@ -2,22 +2,20 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Tanya.png-a2600e768f6843e44b208e7075da8014.s3tc.stex"
-path.etc2="res://.import/Tanya.png-a2600e768f6843e44b208e7075da8014.etc2.stex"
+path="res://.import/Tanya.png-a2600e768f6843e44b208e7075da8014.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Assets/Tanya.png"
-dest_files=[ "res://.import/Tanya.png-a2600e768f6843e44b208e7075da8014.s3tc.stex", "res://.import/Tanya.png-a2600e768f6843e44b208e7075da8014.etc2.stex" ]
+dest_files=[ "res://.import/Tanya.png-a2600e768f6843e44b208e7075da8014.stex" ]
 
 [params]
 
-compress/mode=2
-compress/lossy_quality=0.6
+compress/mode=1
+compress/lossy_quality=0.4
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0

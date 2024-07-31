@@ -2,22 +2,20 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Frost.png-fb653a3efc4ccbc3165b08127deccf64.s3tc.stex"
-path.etc2="res://.import/Frost.png-fb653a3efc4ccbc3165b08127deccf64.etc2.stex"
+path="res://.import/Frost.png-fb653a3efc4ccbc3165b08127deccf64.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Assets/Frost.png"
-dest_files=[ "res://.import/Frost.png-fb653a3efc4ccbc3165b08127deccf64.s3tc.stex", "res://.import/Frost.png-fb653a3efc4ccbc3165b08127deccf64.etc2.stex" ]
+dest_files=[ "res://.import/Frost.png-fb653a3efc4ccbc3165b08127deccf64.stex" ]
 
 [params]
 
-compress/mode=2
-compress/lossy_quality=0.6
+compress/mode=1
+compress/lossy_quality=0.4
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0

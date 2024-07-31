@@ -430,7 +430,6 @@ anims/Tanya = SubResource( 7 )
 [node name="Back" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 360, 639 )
 stream = ExtResource( 23 )
-autoplay = true
 
 [node name="Select" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 360, 639 )

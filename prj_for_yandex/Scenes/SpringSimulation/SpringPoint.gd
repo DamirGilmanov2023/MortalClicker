@@ -11,12 +11,19 @@ var start_position : Vector2
 var spring_offset := Vector2.ZERO
 
 var start_flag=false
-	
+
+var drag:bool=false
+var mouse_pos:Vector2
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			drag=true
+		else:
+			drag=false
 
 func _physics_process(delta : float):
-	
-	if Input.is_action_just_pressed("LMB"):
-		var mouse_pos : Vector2 #(450,-55) #get_global_mouse_position()
+	if drag:
+		drag=false
 		mouse_pos.x=450
 		mouse_pos.y=-55
 		global_position = mouse_pos

@@ -2,22 +2,20 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Skarlet_t.png-1257ce46f3b7d8b0c3862af7c6ab8709.s3tc.stex"
-path.etc2="res://.import/Skarlet_t.png-1257ce46f3b7d8b0c3862af7c6ab8709.etc2.stex"
+path="res://.import/Skarlet_t.png-1257ce46f3b7d8b0c3862af7c6ab8709.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc2" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://Assets/Skarlet_t.png"
-dest_files=[ "res://.import/Skarlet_t.png-1257ce46f3b7d8b0c3862af7c6ab8709.s3tc.stex", "res://.import/Skarlet_t.png-1257ce46f3b7d8b0c3862af7c6ab8709.etc2.stex" ]
+dest_files=[ "res://.import/Skarlet_t.png-1257ce46f3b7d8b0c3862af7c6ab8709.stex" ]
 
 [params]
 
-compress/mode=2
-compress/lossy_quality=0.6
+compress/mode=1
+compress/lossy_quality=0.4
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
