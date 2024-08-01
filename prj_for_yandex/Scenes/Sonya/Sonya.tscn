@@ -193,7 +193,6 @@ position = Vector2( 485, 710 )
 [node name="Play1" type="AudioStreamPlayer2D" parent="Audio"]
 position = Vector2( -3, -4 )
 stream = ExtResource( 19 )
-autoplay = true
 
 [node name="Play2" type="AudioStreamPlayer2D" parent="Audio"]
 position = Vector2( -3, -4 )

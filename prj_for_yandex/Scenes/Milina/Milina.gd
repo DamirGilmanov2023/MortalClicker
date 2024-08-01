@@ -18,6 +18,8 @@ func _ready():
 	
 	Global.connect("ad",self,'_ad')
 	
+	$Audio/Play2.play()
+	
 func _foc_unfoc(value):
 	if value=="foc":
 		get_tree().paused=false
@@ -25,8 +27,9 @@ func _foc_unfoc(value):
 		get_tree().paused=true
 
 func _ad(value):
-	get_tree().paused=false
-	$Audio/Play2.stream_paused=false
+	if value==true or value==false:
+		get_tree().paused=false
+		$Audio/Play2.play()
 
 var flag_safe:bool=true
 
@@ -56,8 +59,8 @@ func _physics_process(_delta):
 		if Global.score>Global.mass_add[0]:
 			$ui/button_add.disabled=false
 		if Global.Milina_life<=0:
-			Global.Milina_max_life=2400
-			Global.Milina_life=2400
+			Global.Milina_max_life=5000
+			Global.Milina_life=5000
 			Global.Jade_disabled=false
 			Global.safe_data()
 			$Audio/Play2.stop()
@@ -92,7 +95,7 @@ func _on_Timer_timeout():
 		$rekl/T.start()
 	
 func _on_T_timeout():
-	$Audio/Play2.stream_paused=true
+	$Audio/Play2.stop()
 	$rekl.visible=true
 	time=3
 	$rekl/Label.text="Реклама через "+str(time)

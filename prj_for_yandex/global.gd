@@ -1,5 +1,7 @@
 extends Node
 
+var game_start=true
+
 var Sonya_life:int=300
 var Milina_life:int=500
 var Jade_life:int=800

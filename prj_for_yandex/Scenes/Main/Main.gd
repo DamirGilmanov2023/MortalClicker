@@ -13,13 +13,13 @@ func _ready():
 	
 	Global.connect('foc_unfoc',self,'_foc_unfoc')
 	Global.js_foc_unfoc()
-	
-	Global.js_game_ready_api()
+	if Global.game_start:
+		Global.game_start=false
+		Global.js_game_ready_api()
 	
 	Global.connect("ad",self,'_ad')
 	Global.js_show_ad()
 	get_tree().paused=true
-	$Back.play()
 	
 func _foc_unfoc(value):
 	if value=="foc":
@@ -28,7 +28,11 @@ func _foc_unfoc(value):
 		get_tree().paused=true
 
 func _ad(value):
-	get_tree().paused=false
+	print(value)
+	print(typeof(value))
+	if value==true or value==false:
+		get_tree().paused=false
+		$Back.play()
 
 func _on_d1_pressed():
 	$Select.play()

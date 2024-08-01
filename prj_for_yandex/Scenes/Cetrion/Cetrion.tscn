@@ -201,7 +201,6 @@ stream = ExtResource( 17 )
 [node name="Play3" type="AudioStreamPlayer2D" parent="Audio"]
 position = Vector2( -3, -4 )
 stream = ExtResource( 18 )
-autoplay = true
 
 [node name="Play4" type="AudioStreamPlayer2D" parent="Audio"]
 position = Vector2( -3, -4 )
