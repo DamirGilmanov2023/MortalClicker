@@ -2,27 +2,29 @@ extends Node
 
 var game_start=true
 
-var Sonya_life:int=300
-var Milina_life:int=500
-var Jade_life:int=800
-var Kitana_life:int=1000
-var Sindel_life:int=1200
-var Tanya_life:int=1500
-var Frost_life:int=1800
-var Cetrion_life:int=2000
-var Skarlet_life:int=2200
-var Ferra_life:int=2400
+var click=true
 
-var Sonya_max_life:int=300
-var Milina_max_life:int=500
-var Jade_max_life:int=800
-var Kitana_max_life:int=1000
-var Sindel_max_life:int=1200
-var Tanya_max_life:int=1500
-var Frost_max_life:int=1800
-var Cetrion_max_life:int=2000
-var Skarlet_max_life:int=2200
-var Ferra_max_life:int=2400
+var Sonya_life:int=500
+var Milina_life:int=1000
+var Jade_life:int=1500
+var Kitana_life:int=2000
+var Sindel_life:int=2500
+var Tanya_life:int=3000
+var Frost_life:int=3500
+var Cetrion_life:int=4000
+var Skarlet_life:int=4500
+var Ferra_life:int=5000
+
+var Sonya_max_life:int=500
+var Milina_max_life:int=1000
+var Jade_max_life:int=1500
+var Kitana_max_life:int=2000
+var Sindel_max_life:int=2500
+var Tanya_max_life:int=3000
+var Frost_max_life:int=3500
+var Cetrion_max_life:int=4000
+var Skarlet_max_life:int=4500
+var Ferra_max_life:int=5000
 
 var Milina_disabled=true
 var Jade_disabled=true
@@ -38,7 +40,7 @@ var step:int=1
 
 var score:int=0
 
-var mass_add=[100,300,500,1000,2000,3000,5000]
+var mass_add=[800,2000,4000,8000,10000]
 #-------------------------------------------------------------------------------
 func safe_data():
 	var value:String

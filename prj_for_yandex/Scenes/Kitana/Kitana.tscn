@@ -232,7 +232,7 @@ text = "Реклама через 3"
 one_shot = true
 
 [node name="T" type="Timer" parent="rekl"]
-wait_time = 180.0
+wait_time = 100.0
 one_shot = true
 
 [node name="TimerSafe" type="Timer" parent="."]

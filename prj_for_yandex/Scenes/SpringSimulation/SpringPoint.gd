@@ -22,7 +22,7 @@ func _input(event):
 			drag=false
 
 func _physics_process(delta : float):
-	if drag:
+	if drag and Global.click:
 		drag=false
 		mouse_pos.x=450
 		mouse_pos.y=-55
